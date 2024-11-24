@@ -1,0 +1,212 @@
+:root {
+  /* CSS HEX */
+  /* --myrtle-green: #287271ff;
+    --saffron: #e9c46aff;
+    --burnt-sienna: #e76f51ff;
+    --charcoal: #264653ff; */
+
+  /* CSS HSL */
+  --myrtle-green-1: hsla(179, 48%, 10%, 1);
+  --myrtle-green-2: hsla(179, 48%, 20%, 1);
+  --myrtle-green-3: hsla(179, 48%, 30%, 1); /*main*/
+  --myrtle-green-4: hsla(179, 48%, 40%, 1);
+  --myrtle-green-5: hsla(179, 48%, 50%, 1);
+  --myrtle-green-6: hsla(179, 48%, 60%, 1);
+  --myrtle-green-7: hsla(179, 48%, 70%, 1);
+  --myrtle-green-8: hsla(179, 48%, 80%, 1);
+  --myrtle-green-9: hsla(179, 48%, 90%, 1);
+  --saffron-1: hsla(43, 74%, 16%, 1);
+  --saffron-2: hsla(43, 74%, 26%, 1);
+  --saffron-3: hsla(43, 74%, 36%, 1);
+  --saffron-4: hsla(43, 74%, 46%, 1);
+  --saffron-5: hsla(43, 74%, 56%, 1);
+  --saffron-6: hsla(43, 74%, 66%, 1); /*main*/
+  --saffron-7: hsla(43, 74%, 76%, 1);
+  --saffron-8: hsla(43, 74%, 86%, 1);
+  --saffron-9: hsla(43, 74%, 96%, 1);
+  --burnt-sienna-1: hsla(12, 76%, 11%, 1);
+  --burnt-sienna-2: hsla(12, 76%, 21%, 1);
+  --burnt-sienna-3: hsla(12, 76%, 31%, 1);
+  --burnt-sienna-4: hsla(12, 76%, 41%, 1);
+  --burnt-sienna-5: hsla(12, 76%, 51%, 1);
+  --burnt-sienna-6: hsla(12, 76%, 61%, 1); /*main*/
+  --burnt-sienna-7: hsla(12, 76%, 71%, 1);
+  --burnt-sienna-8: hsla(12, 76%, 81%, 1);
+  --burnt-sienna-9: hsla(12, 76%, 91%, 1);
+  --charcoal-1: hsla(197, 37%, 14%, 1);
+  --charcoal-2: hsla(197, 37%, 24%, 1); /*main*/
+  --charcoal-3: hsla(197, 37%, 34%, 1);
+  --charcoal-4: hsla(197, 37%, 44%, 1);
+  --charcoal-5: hsla(197, 37%, 54%, 1);
+  --charcoal-6: hsla(197, 37%, 64%, 1);
+  --charcoal-7: hsla(197, 37%, 74%, 1);
+  --charcoal-8: hsla(197, 37%, 84%, 1);
+  --charcoal-9: hsla(197, 37%, 94%, 1);
+  --gray-01: hsla(0, 0%, 95%, 1);
+  --gray-02: hsla(0, 0%, 90%, 1);
+  --gray-03: hsla(0, 0%, 85%, 1);
+  --gray-04: hsla(0, 0%, 80%, 1);
+  --gray-05: hsla(0, 0%, 75%, 1);
+  --gray-06: hsla(0, 0%, 70%, 1);
+  --gray-07: hsla(0, 0%, 65%, 1);
+  --gray-08: hsla(0, 0%, 60%, 1);
+  --gray-09: hsla(0, 0%, 55%, 1);
+  --gray-10: hsla(0, 0%, 50%, 1);
+  --gray-11: hsla(0, 0%, 45%, 1);
+  --gray-12: hsla(0, 0%, 40%, 1);
+  --gray-13: hsla(0, 0%, 35%, 1);
+  --gray-14: hsla(0, 0%, 30%, 1);
+  --gray-15: hsla(0, 0%, 25%, 1);
+  --gray-16: hsla(0, 0%, 20%, 1);
+  --gray-17: hsla(0, 0%, 15%, 1);
+  --gray-18: hsla(0, 0%, 10%, 1);
+  --gray-19: hsla(0, 0%, 5%, 1);
+}
+@font-face {
+  font-family: "iranSans";
+  src: url("/assets/IRANSansWeb(FaNum).woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "iranSans";
+  direction: rtl;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f8fc;
+}
+
+.pay-container {
+  width: 350px;
+  padding: 20px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.digit {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+}
+.digit Span {
+  font-size: 12px;
+  color: #999;
+}
+
+.text {
+  font-size: 14px;
+  color: #777;
+}
+
+.notice {
+  font-size: 12px;
+  color: var(--burnt-sienna-3);
+  margin: 10px 0;
+  text-align: start;
+}
+.pay-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.pay-type {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 75px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  transition: background-color,border 0.6s;
+  animation: show_new_item 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76)
+    forwards;
+  cursor: pointer;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+}
+.pay-type:hover,
+.pay-type.active {
+  border: 1px solid #eee;
+  border: 1px solid #2f913b;
+  background-color: #f3fff2;
+}
+
+.pay-type img {
+  width: 52px;
+}
+
+.hidden {
+  display: none;
+}
+.context {
+  font-size: 14px;
+  color: #333;
+}
+
+p {
+  font-size: 12px;
+  color: #555;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button {
+  font-family: "iranSans";
+  
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color:var(--myrtle-green-3);
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:var(--myrtle-green-4);
+}
+
+button img {
+  width: 32px;
+  height: 32px;
+}
+@keyframes show_new_item {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
