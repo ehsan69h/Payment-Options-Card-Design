@@ -22,10 +22,13 @@ function payStart() {
   let type = selectedItem.getAttribute("data-type");
   switch (type) {
     case "top":
+      // redirect to TOP payment
       break;
     case "sadad":
+      // redirect to SADAD payment
       break;
     case "sep":
+      // redirect to SEP payment
       break;
     default:
   }
@@ -58,7 +61,6 @@ window.addEventListener("load", function () {
   const selected = document.querySelector(
     ".pay-type[data-type='" + selectedOption + "']"
   );
-  console.log(selected, selectedOption);
-  selected?.classList?.remove("hidden");
-  selected?.classList?.add('active')
+  selected?.classList?.remove(hiddenClass);
+  selected?.classList?.add(activeClass);
 });
